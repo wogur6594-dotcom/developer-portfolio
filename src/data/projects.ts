@@ -55,19 +55,19 @@ export const projects: Project[] = [
     {
         index: 'PROJECT 03',
         title: 'Developer Portfolio',
-        role: 'Full Stack',
+        role: 'Frontend',
         summary:
-            '이력서와 프로젝트 경험을 단순 문서가 아닌 웹 서비스 형태로 제공하고 백엔드 API, 관리자 기능, CI/CD와 실제 배포까지 구현하는 개발자 포트폴리오입니다.',
+            'React와 TypeScript 기반으로 개발한 개인 포트폴리오 웹사이트입니다. 프로젝트별 기술적 기여와 문제 해결 경험을 정리하고, 이력서 PDF 제공 및 반응형 UI를 구현하여 Vercel에 배포했습니다.',
         technologies: [
             'React',
             'TypeScript',
-            'Spring Boot',
-            'PostgreSQL',
-            'Docker',
+            'Vite',
+            'React Router',
+            'Vercel',
         ],
-        detailLabel: 'Goal',
+        detailLabel: 'Key Work',
         detailValue:
-            'Portfolio Web · REST API · Admin · Docker · CI/CD · Deployment',
+            '반응형 UI · 프로젝트 상세 페이지 · 클라이언트 라우팅 · PDF 이력서 제공 · GitHub 연동 자동 배포',
     },
     {
         index: 'PROJECT 04',
