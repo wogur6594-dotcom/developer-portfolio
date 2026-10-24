@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom'
 import { projects } from '../data/projects'
 
@@ -33,9 +34,17 @@ function ProjectsSection() {
                                     <h3>{project.title}</h3>
                                 </div>
 
-                                <span className="project-role">
-                                    {project.role}
-                                </span>
+                                <div className="project-badges">
+                                    {project.status === 'In Progress' && (
+                                        <span className="project-status">
+                                            In Progress
+                                        </span>
+                                    )}
+
+                                    <span className="project-role">
+                                        {project.role}
+                                    </span>
+                                </div>
                             </div>
 
                             <p className="project-summary">
@@ -53,7 +62,11 @@ function ProjectsSection() {
                             <div className="project-details">
                                 <div>
                                     <strong>Role</strong>
-                                    <p>{project.role} Developer</p>
+                                    <p>
+                                        {project.role === 'Solo Developer'
+                                            ? 'Solo Developer'
+                                            : `${project.role} Developer`}
+                                    </p>
                                 </div>
 
                                 <div>

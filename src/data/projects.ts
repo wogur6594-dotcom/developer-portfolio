@@ -1,3 +1,4 @@
+
 export type Project = {
     index: string
     title: string
@@ -8,6 +9,7 @@ export type Project = {
     detailValue: string
     featured?: boolean
     troubleshootingLink?: boolean
+    status?: 'Completed' | 'In Progress'
 }
 
 export const projects: Project[] = [
@@ -29,6 +31,7 @@ export const projects: Project[] = [
             'REST API · DB 설계 · AI 서버 연동 · 건강 알림 · 주간 리포트',
         featured: true,
         troubleshootingLink: true,
+        status: 'Completed',
     },
     {
         index: 'PROJECT 02',
@@ -47,6 +50,7 @@ export const projects: Project[] = [
         detailValue:
             'REST API 연동 · JWT 인증 처리 · 관리자 화면 · 채팅 · 렌더링 최적화',
         troubleshootingLink: true,
+        status: 'Completed',
     },
     {
         index: 'PROJECT 03',
@@ -64,5 +68,23 @@ export const projects: Project[] = [
         detailLabel: 'Goal',
         detailValue:
             'Portfolio Web · REST API · Admin · Docker · CI/CD · Deployment',
+    },
+    {
+        index: 'PROJECT 04',
+        title: 'Calendar',
+        role: 'Solo Developer',
+        status: 'In Progress',
+        summary:
+            '사용자 간 일정 공유와 Google Calendar 양방향 동기화를 목표로 개발 중인 협업 일정 관리 웹 서비스입니다.',
+        technologies: [
+            'Java 21',
+            'Spring Boot',
+            'React',
+            'TypeScript',
+            'PostgreSQL',
+        ],
+        detailLabel: 'Development Goals',
+        detailValue:
+            'REST API · 데이터 모델링 · 역할 기반 권한 관리 · 초대 시스템 · Google Calendar 연동',
     },
 ]

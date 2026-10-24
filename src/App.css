@@ -1891,3 +1891,27 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Project status badge */
+
+.project-badges {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border: 1px solid #93b8e8;
+    border-radius: 999px;
+    background: #eaf3ff;
+    color: #174b8b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
